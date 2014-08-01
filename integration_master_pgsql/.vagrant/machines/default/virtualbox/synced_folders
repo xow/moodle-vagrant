@@ -1,1 +1,0 @@
-{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/moodle/git/moodle-vagrant/integration_master_pgsql","disabled":false},"/tmp/vagrant-puppet-3/manifests":{"owner":"root","guestpath":"/tmp/vagrant-puppet-3/manifests","hostpath":"/home/moodle/git/moodle-vagrant/integration_master_pgsql/manifests","disabled":false}}}
