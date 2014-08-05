@@ -10,3 +10,14 @@ package {'git':
 package {'apache2':
     ensure  => latest,
 }
+package {'php5':
+    ensure => latest,
+}
+package {'libapache2-mod-php5':
+    ensure => latest,
+}
+exec { "apt-update":
+    command => "/usr/bin/apt-get update"
+}
+
+Exec["apt-update"] -> Package <| |>
