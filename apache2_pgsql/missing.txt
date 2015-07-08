@@ -1,0 +1,2 @@
+cd /opt/
+sudo git clone git://github.com/FMCorz/mdk.git moodle-sdk
