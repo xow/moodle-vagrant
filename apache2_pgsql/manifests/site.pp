@@ -16,8 +16,20 @@ package {'php5':
 package {'libapache2-mod-php5':
     ensure => latest,
 }
-exec { "apt-update":
+package {'python-dev':
+    ensure => latest,
+}
+package {'python-pip':
+    ensure => latest,
+}
+package {'libpq-dev':
+    ensure => latest,
+}
+package {'libmysqlclient-dev':
+    ensure => latest,
+}
+exec { 'apt-update':
     command => "/usr/bin/apt-get update"
 }
 
-Exec["apt-update"] -> Package <| |>
+Exec['apt-update'] -> Package <| |>
